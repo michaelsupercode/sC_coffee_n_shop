@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Special Elite';
+    src: url(../fonts/Special_Elite/SpecialElite-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Exo";
+    src: url(../fonts/Exo/static/Exo-Bold.ttf);
+}
+
+body {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+header,
+main,
+footer,
+nav {
+    font-family: 'Special Elite';
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Exo";
+    margin: 5% 0 0 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    line-height: 1.2rem;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #000;
+    text-decoration: unset;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 5vh;
+    background: #fff;
+}
+
+nav ul {
+    margin: 2% 0 2% 60%;
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section:nth-of-type(1) {
+    background: url(../img/bg.jpeg) no-repeat center/cover;
+    height: 70vh;
+}
+
+section:nth-of-type(1) figure {
+    width: 60%;
+    padding: 15% 0;
+}
+
+section:nth-of-type(2) {
+    background: url(../img/beans_icon.png) no-repeat center/cover;
+}
+
+section:nth-of-type(2) article {
+    height: 60vh;
+    padding: 13% 35% 20% 10%;
+    margin: auto 0;
+}
+
+.parallax {
+    height: 100vh;
+}
+
+section:nth-of-type(3) {
+    background: url(../img/bridge_1.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(5) {
+    background: url(../img/bridge_2.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(7) {
+    background: url(../img/bridge_3.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(9) {
+    background: url(../img/bridge_4.jpeg) no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(4) {
+    width: 100%;
+    margin: 0% auto;
+    text-align: center;
+    background: url(../img/cake_icon.png) no-repeat left/contain;
+}
+
+section:nth-of-type(4) figure {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.content {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.box {
+    width: 38%;
+    margin: 2% auto;
+    border: 1px solid #000;
+    padding: 2%;
+}
+
+section:nth-of-type(8) {
+    background: url(../img/pie_icon.png) no-repeat right/contain;
+}
+
+section:nth-of-type(10) {
+    background: url(../img/muffin_icon.png) no-repeat left/contain;
+}
+
+#story,
+#catering,
+#cakes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: flex-end;
+    margin: 4%;
+}
+
+#story figure {
+    width: 45%;
+}
+
+#story article,
+#catering article,
+#cakes article {
+    width: 70%;
+}
+
+#story article {
+    margin: 0 0 0 20%;
+}
+
+#catering article,
+#cakes article {
+    margin: 0 20% 0 0;
+    padding: 0 20% 0 0;
+}
+
+.button {
+    border: 1px solid #000;
+    width: 40%;
+    padding: 1% 0;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: rgb(252, 233, 210);
+}
+
+.menuButton {
+    width: 90%;
+    margin: 9% auto;
+    padding: 1%;
+    text-align: center;
+}
+
+#catering figure,
+#cakes figure {
+    width: 90%;
+    padding: 0 0 0 36%;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2%;
+}
+
+footer h2 {
+    margin: 0;
+}
+
+footer .socialMedia {
+    width: 2%;
+}
+
+footer figure {
+    margin: 0 auto;
+}
+
+footer .today {
+    width: 8%;
+}
+
+@media screen and (max-width:760px) {
+    nav ul {
+        width: 100%;
+        margin: 5% auto;
+    }
+    section:nth-of-type(1) figure {
+        width: 100%;
+        margin: 0 auto;
+        padding: 41% 0;
+    }
+    section:nth-of-type(2) article {
+        height: 60vh;
+        padding: 13% 21%;
+        margin: auto 0;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: .9rem;
+    }
+    .boxed {
+        width: 90%;
+    }
+    .parallax {
+        display: none;
+    }
+    #story,
+    #catering,
+    #cakes {
+        display: block;
+        margin: 4%;
+    }
+    #story figure {
+        width: 98%
+    }
+    #catering figure,
+    #cakes figure {
+        width: 100%;
+        padding: 0 2%;
+    }
+    #story article,
+    #catering article,
+    #cakes article {
+        width: 91%;
+        margin: 2%;
+        padding: 0;
+    }
+    .button {
+        width: 40%;
+        margin: 0 auto;
+    }
+    footer .socialMedia {
+        width: 20%;
+    }
+    footer .today {
+        width: 30%;
+    }
+}
